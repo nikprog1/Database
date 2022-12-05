@@ -1,0 +1,2620 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <requires lib="gtk+" version="2.24"/>
+  <!-- interface-naming-policy project-wide -->
+  <object class="GtkAdjustment" id="adj3">
+    <property name="upper">31</property>
+    <property name="step_increment">1</property>
+    <property name="page_increment">10</property>
+  </object>
+  <object class="GtkAdjustment" id="adj4">
+    <property name="upper">12</property>
+    <property name="step_increment">1</property>
+    <property name="page_increment">10</property>
+  </object>
+  <object class="GtkAdjustment" id="adj5">
+    <property name="lower">1900</property>
+    <property name="upper">3000</property>
+    <property name="step_increment">1</property>
+    <property name="page_increment">10</property>
+  </object>
+  <object class="GtkAdjustment" id="adjNomer">
+    <property name="upper">100</property>
+    <property name="step_increment">1</property>
+    <property name="page_increment">10</property>
+  </object>
+  <object class="GtkAdjustment" id="adjPrihod">
+    <property name="upper">10000</property>
+    <property name="step_increment">1</property>
+    <property name="page_increment">10</property>
+  </object>
+  <object class="GtkAdjustment" id="adjustment1">
+    <property name="upper">100</property>
+    <property name="step_increment">1</property>
+    <property name="page_increment">10</property>
+  </object>
+  <object class="GtkAdjustment" id="adjustment_PorNom">
+    <property name="upper">9999999</property>
+    <property name="step_increment">1</property>
+    <property name="page_increment">10</property>
+  </object>
+  <object class="GtkAdjustment" id="adjustment_PorNomProj">
+    <property name="upper">200</property>
+    <property name="step_increment">1</property>
+    <property name="page_increment">10</property>
+  </object>
+  <object class="GtkAdjustment" id="adjustment_cable_length">
+    <property name="upper">10000000</property>
+    <property name="step_increment">1</property>
+    <property name="page_increment">10</property>
+  </object>
+  <object class="GtkWindow" id="wCable">
+    <property name="can_focus">False</property>
+    <signal name="destroy" handler="on_wCable_destroy" swapped="no"/>
+    <signal name="show" handler="on_wCable_show" swapped="no"/>
+    <child>
+      <object class="GtkVBox" id="vbox11">
+        <property name="visible">True</property>
+        <property name="can_focus">False</property>
+        <child>
+          <object class="GtkLabel" id="label29">
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="label" translatable="yes">Данные по кабелю</property>
+            <attributes>
+              <attribute name="weight" value="bold"/>
+              <attribute name="size" value="15"/>
+            </attributes>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="position">0</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkFixed" id="fixed6">
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <signal name="destroy" handler="on_fixed6_destroy" swapped="no"/>
+            <child>
+              <object class="GtkEntry" id="entry3">
+                <property name="width_request">160</property>
+                <property name="height_request">25</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="invisible_char">●</property>
+                <property name="primary_icon_activatable">False</property>
+                <property name="secondary_icon_activatable">False</property>
+                <property name="primary_icon_sensitive">True</property>
+                <property name="secondary_icon_sensitive">True</property>
+              </object>
+              <packing>
+                <property name="x">46</property>
+                <property name="y">60</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkLabel" id="label33">
+                <property name="width_request">160</property>
+                <property name="height_request">25</property>
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="label" translatable="yes">Обогреваемый объект</property>
+                <attributes>
+                  <attribute name="weight" value="bold"/>
+                </attributes>
+              </object>
+              <packing>
+                <property name="x">46</property>
+                <property name="y">29</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkLabel" id="label34">
+                <property name="width_request">160</property>
+                <property name="height_request">25</property>
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="label" translatable="yes">Длина кабеля</property>
+                <attributes>
+                  <attribute name="weight" value="bold"/>
+                </attributes>
+              </object>
+              <packing>
+                <property name="x">249</property>
+                <property name="y">29</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkLabel" id="label35">
+                <property name="width_request">160</property>
+                <property name="height_request">25</property>
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="label" translatable="yes">Исполнение</property>
+                <attributes>
+                  <attribute name="weight" value="bold"/>
+                </attributes>
+              </object>
+              <packing>
+                <property name="x">655</property>
+                <property name="y">29</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkLabel" id="label36">
+                <property name="width_request">160</property>
+                <property name="height_request">25</property>
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="label" translatable="yes">Маркировка</property>
+                <attributes>
+                  <attribute name="weight" value="bold"/>
+                </attributes>
+              </object>
+              <packing>
+                <property name="x">858</property>
+                <property name="y">29</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkSpinButton" id="spinbutton_cable_length">
+                <property name="width_request">160</property>
+                <property name="height_request">25</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="invisible_char">●</property>
+                <property name="primary_icon_activatable">False</property>
+                <property name="secondary_icon_activatable">False</property>
+                <property name="primary_icon_sensitive">True</property>
+                <property name="secondary_icon_sensitive">True</property>
+                <property name="adjustment">adjustment_cable_length</property>
+                <property name="climb_rate">0.5</property>
+              </object>
+              <packing>
+                <property name="x">249</property>
+                <property name="y">60</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkComboBoxText" id="comboboxtext4">
+                <property name="width_request">160</property>
+                <property name="height_request">25</property>
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="focus_on_click">False</property>
+                <property name="button_sensitivity">on</property>
+                <signal name="changed" handler="on_comboboxtext4_changed" swapped="no"/>
+              </object>
+              <packing>
+                <property name="x">655</property>
+                <property name="y">60</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkComboBoxText" id="comboboxtext5">
+                <property name="width_request">160</property>
+                <property name="height_request">25</property>
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="focus_on_click">False</property>
+              </object>
+              <packing>
+                <property name="x">858</property>
+                <property name="y">60</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkLabel" id="label40">
+                <property name="width_request">160</property>
+                <property name="height_request">25</property>
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="label" translatable="yes">Тип</property>
+                <attributes>
+                  <attribute name="weight" value="bold"/>
+                </attributes>
+              </object>
+              <packing>
+                <property name="x">453</property>
+                <property name="y">29</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkComboBoxText" id="comboboxtext_type">
+                <property name="width_request">160</property>
+                <property name="height_request">25</property>
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="focus_on_click">False</property>
+                <property name="button_sensitivity">on</property>
+                <signal name="changed" handler="on_comboboxtext_type_changed" swapped="no"/>
+              </object>
+              <packing>
+                <property name="x">452</property>
+                <property name="y">60</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkEntry" id="entry_another">
+                <property name="width_request">160</property>
+                <property name="height_request">25</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="invisible_char">●</property>
+                <property name="primary_icon_activatable">False</property>
+                <property name="secondary_icon_activatable">False</property>
+                <property name="primary_icon_sensitive">True</property>
+                <property name="secondary_icon_sensitive">True</property>
+              </object>
+              <packing>
+                <property name="x">46</property>
+                <property name="y">159</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkLabel" id="label41">
+                <property name="width_request">160</property>
+                <property name="height_request">25</property>
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="label" translatable="yes">Другое</property>
+                <attributes>
+                  <attribute name="weight" value="bold"/>
+                </attributes>
+              </object>
+              <packing>
+                <property name="x">46</property>
+                <property name="y">128</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="expand">True</property>
+            <property name="fill">True</property>
+            <property name="position">1</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="button30">
+            <property name="label" translatable="yes">Закрыть</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <signal name="clicked" handler="on_button30_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="position">2</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+  <object class="GtkWindow" id="wCable1(vipad spisok щиоусеы)">
+    <property name="can_focus">False</property>
+    <child>
+      <object class="GtkVBox" id="vbox5">
+        <property name="visible">True</property>
+        <property name="can_focus">False</property>
+        <child>
+          <object class="GtkLabel" id="label5">
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="label" translatable="yes">Данные по кабелю</property>
+            <attributes>
+              <attribute name="weight" value="bold"/>
+              <attribute name="size" value="15"/>
+            </attributes>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="position">0</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkFixed" id="fixed7">
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <child>
+              <object class="GtkEntry" id="entry1">
+                <property name="width_request">160</property>
+                <property name="height_request">25</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="invisible_char">●</property>
+                <property name="invisible_char_set">True</property>
+                <property name="primary_icon_activatable">False</property>
+                <property name="secondary_icon_activatable">False</property>
+                <property name="primary_icon_sensitive">True</property>
+                <property name="secondary_icon_sensitive">True</property>
+              </object>
+              <packing>
+                <property name="x">46</property>
+                <property name="y">60</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkLabel" id="label6">
+                <property name="width_request">160</property>
+                <property name="height_request">25</property>
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="label" translatable="yes">Обогреваемый объект</property>
+                <attributes>
+                  <attribute name="weight" value="bold"/>
+                </attributes>
+              </object>
+              <packing>
+                <property name="x">46</property>
+                <property name="y">29</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkLabel" id="label7">
+                <property name="width_request">160</property>
+                <property name="height_request">25</property>
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="label" translatable="yes">Длина кабеля</property>
+                <attributes>
+                  <attribute name="weight" value="bold"/>
+                </attributes>
+              </object>
+              <packing>
+                <property name="x">249</property>
+                <property name="y">29</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkLabel" id="label8">
+                <property name="width_request">160</property>
+                <property name="height_request">25</property>
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="label" translatable="yes">Исполнение</property>
+                <attributes>
+                  <attribute name="weight" value="bold"/>
+                </attributes>
+              </object>
+              <packing>
+                <property name="x">655</property>
+                <property name="y">29</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkLabel" id="label9">
+                <property name="width_request">160</property>
+                <property name="height_request">25</property>
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="label" translatable="yes">Маркировка</property>
+                <attributes>
+                  <attribute name="weight" value="bold"/>
+                </attributes>
+              </object>
+              <packing>
+                <property name="x">858</property>
+                <property name="y">29</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkSpinButton" id="spinbutton_cable_length1">
+                <property name="width_request">160</property>
+                <property name="height_request">25</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="invisible_char">●</property>
+                <property name="primary_icon_activatable">False</property>
+                <property name="secondary_icon_activatable">False</property>
+                <property name="primary_icon_sensitive">True</property>
+                <property name="secondary_icon_sensitive">True</property>
+                <property name="adjustment">adjustment_cable_length</property>
+                <property name="climb_rate">0.5</property>
+              </object>
+              <packing>
+                <property name="x">249</property>
+                <property name="y">60</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkComboBoxText" id="comboboxtext6">
+                <property name="width_request">160</property>
+                <property name="height_request">25</property>
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="focus_on_click">False</property>
+                <property name="button_sensitivity">on</property>
+              </object>
+              <packing>
+                <property name="x">655</property>
+                <property name="y">60</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkComboBoxText" id="comboboxtext7">
+                <property name="width_request">160</property>
+                <property name="height_request">25</property>
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="focus_on_click">False</property>
+              </object>
+              <packing>
+                <property name="x">858</property>
+                <property name="y">60</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkLabel" id="label10">
+                <property name="width_request">160</property>
+                <property name="height_request">25</property>
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="label" translatable="yes">Тип</property>
+                <attributes>
+                  <attribute name="weight" value="bold"/>
+                </attributes>
+              </object>
+              <packing>
+                <property name="x">453</property>
+                <property name="y">29</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkComboBoxText" id="comboboxtext_type1">
+                <property name="width_request">160</property>
+                <property name="height_request">25</property>
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="focus_on_click">False</property>
+                <property name="button_sensitivity">on</property>
+              </object>
+              <packing>
+                <property name="x">452</property>
+                <property name="y">60</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkEntry" id="entry_another1">
+                <property name="width_request">160</property>
+                <property name="height_request">25</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="invisible_char">●</property>
+                <property name="invisible_char_set">True</property>
+                <property name="primary_icon_activatable">False</property>
+                <property name="secondary_icon_activatable">False</property>
+                <property name="primary_icon_sensitive">True</property>
+                <property name="secondary_icon_sensitive">True</property>
+              </object>
+              <packing>
+                <property name="x">46</property>
+                <property name="y">159</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkLabel" id="label11">
+                <property name="width_request">160</property>
+                <property name="height_request">25</property>
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="label" translatable="yes">Другое</property>
+                <attributes>
+                  <attribute name="weight" value="bold"/>
+                </attributes>
+              </object>
+              <packing>
+                <property name="x">46</property>
+                <property name="y">128</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkComboBoxText" id="comboboxtext_nazv1">
+                <property name="width_request">100</property>
+                <property name="height_request">37</property>
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="focus_on_click">False</property>
+                <property name="button_sensitivity">on</property>
+              </object>
+              <packing>
+                <property name="x">267</property>
+                <property name="y">108</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="expand">True</property>
+            <property name="fill">True</property>
+            <property name="position">1</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="button12">
+            <property name="label" translatable="yes">Закрыть</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="position">2</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+  <object class="GtkEntryBuffer" id="entrybuffer1"/>
+  <object class="GtkEntryBuffer" id="entrybuffer2"/>
+  <object class="GtkEntryBuffer" id="entrybuffer3"/>
+  <object class="GtkListStore" id="liststore1">
+    <columns>
+      <!-- column-name gint1 -->
+      <column type="gint"/>
+      <!-- column-name gchararray1 -->
+      <column type="gchararray"/>
+      <!-- column-name gchararray2 -->
+      <column type="gchararray"/>
+      <!-- column-name guint1 -->
+      <column type="guint"/>
+      <!-- column-name gchararray3 -->
+      <column type="gchararray"/>
+    </columns>
+    <signal name="row-changed" handler="on_liststore1_row_changed" swapped="no"/>
+  </object>
+  <object class="GtkListStore" id="liststore2">
+    <columns>
+      <!-- column-name gint1 -->
+      <column type="gint"/>
+      <!-- column-name gint2 -->
+      <column type="gint"/>
+      <!-- column-name gchararray1 -->
+      <column type="gchararray"/>
+    </columns>
+  </object>
+  <object class="GtkListStore" id="liststore3">
+    <columns>
+      <!-- column-name gint1 -->
+      <column type="gint"/>
+      <!-- column-name gint2 -->
+      <column type="gint"/>
+      <!-- column-name gchararray1 -->
+      <column type="gchararray"/>
+    </columns>
+  </object>
+  <object class="GtkListStore" id="liststore_FindProject">
+    <columns>
+      <!-- column-name Код -->
+      <column type="gint"/>
+      <!-- column-name НазвУст -->
+      <column type="gchararray"/>
+      <!-- column-name МаркаКаб -->
+      <column type="gchararray"/>
+      <!-- column-name НазвОбъект -->
+      <column type="gchararray"/>
+      <!-- column-name ГеогрРасполож -->
+      <column type="gchararray"/>
+      <!-- column-name НазвЗаказ -->
+      <column type="gchararray"/>
+      <!-- column-name РегНом -->
+      <column type="gchararray"/>
+      <!-- column-name Менеджер -->
+      <column type="gchararray"/>
+      <!-- column-name Проектировщик -->
+      <column type="gchararray"/>
+      <!-- column-name Дата -->
+      <column type="gchararray"/>
+      <!-- column-name Примечания -->
+      <column type="gchararray"/>
+    </columns>
+  </object>
+  <object class="GtkWindow" id="wFindProject">
+    <property name="can_focus">False</property>
+    <signal name="destroy" handler="on_wFindProject_destroy" swapped="no"/>
+    <signal name="show" handler="on_wFindProject_show" swapped="no"/>
+    <child>
+      <object class="GtkVBox" id="vbox12">
+        <property name="visible">True</property>
+        <property name="can_focus">False</property>
+        <child>
+          <object class="GtkLabel" id="label38">
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="label" translatable="yes">Найденные записи</property>
+            <attributes>
+              <attribute name="weight" value="bold"/>
+              <attribute name="size" value="15"/>
+            </attributes>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="position">0</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkScrolledWindow" id="scrolledwindow7">
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="hscrollbar_policy">automatic</property>
+            <property name="vscrollbar_policy">automatic</property>
+            <child>
+              <object class="GtkTreeView" id="treeview_FindProject">
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="model">liststore_FindProject</property>
+                <child>
+                  <object class="GtkTreeViewColumn" id="treeviewcolumn31">
+                    <property name="visible">False</property>
+                    <property name="title" translatable="yes">Код длины установленного кабеля</property>
+                    <child>
+                      <object class="GtkCellRendererText" id="cellrenderertext29"/>
+                      <attributes>
+                        <attribute name="text">0</attribute>
+                      </attributes>
+                    </child>
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkTreeViewColumn" id="treeviewcolumn32">
+                    <property name="title" translatable="yes">Название установки</property>
+                    <property name="alignment">0.5</property>
+                    <child>
+                      <object class="GtkCellRendererText" id="cellrenderertext30"/>
+                      <attributes>
+                        <attribute name="text">1</attribute>
+                      </attributes>
+                    </child>
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkTreeViewColumn" id="treeviewcolumn33">
+                    <property name="title" translatable="yes">Марка кабеля</property>
+                    <property name="alignment">0.5</property>
+                    <child>
+                      <object class="GtkCellRendererText" id="cellrenderertext31"/>
+                      <attributes>
+                        <attribute name="text">2</attribute>
+                      </attributes>
+                    </child>
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkTreeViewColumn" id="treeviewcolumn34">
+                    <property name="title" translatable="yes">Название объекта</property>
+                    <property name="alignment">0.5</property>
+                    <child>
+                      <object class="GtkCellRendererText" id="cellrenderertext32"/>
+                      <attributes>
+                        <attribute name="text">3</attribute>
+                      </attributes>
+                    </child>
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkTreeViewColumn" id="treeviewcolumn35">
+                    <property name="title" translatable="yes">Географическое расположение</property>
+                    <property name="alignment">0.5</property>
+                    <child>
+                      <object class="GtkCellRendererText" id="cellrenderertext33"/>
+                      <attributes>
+                        <attribute name="text">4</attribute>
+                      </attributes>
+                    </child>
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkTreeViewColumn" id="treeviewcolumn36">
+                    <property name="title" translatable="yes">Название заказчика</property>
+                    <property name="alignment">0.5</property>
+                    <child>
+                      <object class="GtkCellRendererText" id="cellrenderertext34"/>
+                      <attributes>
+                        <attribute name="text">5</attribute>
+                      </attributes>
+                    </child>
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkTreeViewColumn" id="treeviewcolumn37">
+                    <property name="title" translatable="yes">Регистрационный номер</property>
+                    <property name="alignment">0.5</property>
+                    <child>
+                      <object class="GtkCellRendererText" id="cellrenderertext35"/>
+                      <attributes>
+                        <attribute name="text">6</attribute>
+                      </attributes>
+                    </child>
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkTreeViewColumn" id="treeviewcolumn38">
+                    <property name="title" translatable="yes">Менеджер</property>
+                    <property name="alignment">0.5</property>
+                    <child>
+                      <object class="GtkCellRendererText" id="cellrenderertext36"/>
+                      <attributes>
+                        <attribute name="text">7</attribute>
+                      </attributes>
+                    </child>
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkTreeViewColumn" id="treeviewcolumn39">
+                    <property name="title" translatable="yes">Проектировщик</property>
+                    <property name="alignment">0.5</property>
+                    <child>
+                      <object class="GtkCellRendererText" id="cellrenderertext37"/>
+                      <attributes>
+                        <attribute name="text">8</attribute>
+                      </attributes>
+                    </child>
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkTreeViewColumn" id="treeviewcolumn40">
+                    <property name="title" translatable="yes">Дата</property>
+                    <property name="alignment">0.5</property>
+                    <child>
+                      <object class="GtkCellRendererText" id="cellrenderertext38"/>
+                      <attributes>
+                        <attribute name="text">9</attribute>
+                      </attributes>
+                    </child>
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkTreeViewColumn" id="treeviewcolumn41">
+                    <property name="title" translatable="yes">Примечания</property>
+                    <property name="alignment">0.5</property>
+                    <child>
+                      <object class="GtkCellRendererText" id="cellrenderertext39"/>
+                      <attributes>
+                        <attribute name="text">10</attribute>
+                      </attributes>
+                    </child>
+                  </object>
+                </child>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="expand">True</property>
+            <property name="fill">True</property>
+            <property name="position">1</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkVBox" id="vbox13">
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <child>
+              <object class="GtkHBox" id="hbox9">
+                <property name="height_request">30</property>
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <child>
+                  <object class="GtkFixed" id="fixed2">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <child>
+                      <object class="GtkRadioButton" id="radiobutton_mark">
+                        <property name="label" translatable="yes">Марка</property>
+                        <property name="width_request">90</property>
+                        <property name="height_request">25</property>
+                        <property name="visible">True</property>
+                        <property name="can_focus">True</property>
+                        <property name="receives_default">False</property>
+                        <property name="active">True</property>
+                        <property name="draw_indicator">True</property>
+                        <property name="group">radiobutton_ust</property>
+                        <signal name="clicked" handler="on_radiobutton2_clicked" swapped="no"/>
+                      </object>
+                      <packing>
+                        <property name="x">200</property>
+                        <property name="y">5</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkRadioButton" id="radiobutton_Obj">
+                        <property name="label" translatable="yes">Объект</property>
+                        <property name="width_request">80</property>
+                        <property name="height_request">25</property>
+                        <property name="visible">True</property>
+                        <property name="can_focus">True</property>
+                        <property name="receives_default">False</property>
+                        <property name="yalign">0.49000000953674316</property>
+                        <property name="active">True</property>
+                        <property name="draw_indicator">True</property>
+                        <property name="group">radiobutton_ust</property>
+                        <signal name="clicked" handler="on_radiobutton_Obj_clicked" swapped="no"/>
+                      </object>
+                      <packing>
+                        <property name="x">270</property>
+                        <property name="y">5</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkRadioButton" id="radiobutton_rasp">
+                        <property name="label" translatable="yes">Расположение</property>
+                        <property name="width_request">110</property>
+                        <property name="height_request">25</property>
+                        <property name="visible">True</property>
+                        <property name="can_focus">True</property>
+                        <property name="receives_default">False</property>
+                        <property name="active">True</property>
+                        <property name="draw_indicator">True</property>
+                        <property name="group">radiobutton_ust</property>
+                        <signal name="clicked" handler="on_radiobutton_rasp_clicked" swapped="no"/>
+                      </object>
+                      <packing>
+                        <property name="x">345</property>
+                        <property name="y">5</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkRadioButton" id="radiobutton_zakaz">
+                        <property name="label" translatable="yes">Заказчик</property>
+                        <property name="width_request">90</property>
+                        <property name="height_request">25</property>
+                        <property name="visible">True</property>
+                        <property name="can_focus">True</property>
+                        <property name="receives_default">False</property>
+                        <property name="active">True</property>
+                        <property name="draw_indicator">True</property>
+                        <property name="group">radiobutton_ust</property>
+                        <signal name="clicked" handler="on_radiobutton_zakaz_clicked" swapped="no"/>
+                      </object>
+                      <packing>
+                        <property name="x">465</property>
+                        <property name="y">5</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkRadioButton" id="radiobutton_nom">
+                        <property name="label" translatable="yes">Номер</property>
+                        <property name="width_request">90</property>
+                        <property name="height_request">25</property>
+                        <property name="visible">True</property>
+                        <property name="can_focus">True</property>
+                        <property name="receives_default">False</property>
+                        <property name="active">True</property>
+                        <property name="draw_indicator">True</property>
+                        <property name="group">radiobutton_ust</property>
+                        <signal name="clicked" handler="on_radiobutton_nom_clicked" swapped="no"/>
+                      </object>
+                      <packing>
+                        <property name="x">556</property>
+                        <property name="y">5</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkRadioButton" id="radiobutton_man">
+                        <property name="label" translatable="yes">Менеджер</property>
+                        <property name="width_request">90</property>
+                        <property name="height_request">25</property>
+                        <property name="visible">True</property>
+                        <property name="can_focus">True</property>
+                        <property name="receives_default">False</property>
+                        <property name="active">True</property>
+                        <property name="draw_indicator">True</property>
+                        <property name="group">radiobutton_ust</property>
+                        <signal name="clicked" handler="on_radiobutton_man_clicked" swapped="no"/>
+                      </object>
+                      <packing>
+                        <property name="x">635</property>
+                        <property name="y">5</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkRadioButton" id="radiobutton_proj">
+                        <property name="label" translatable="yes">Проектировщик</property>
+                        <property name="width_request">120</property>
+                        <property name="height_request">25</property>
+                        <property name="visible">True</property>
+                        <property name="can_focus">True</property>
+                        <property name="receives_default">False</property>
+                        <property name="active">True</property>
+                        <property name="draw_indicator">True</property>
+                        <property name="group">radiobutton_ust</property>
+                        <signal name="clicked" handler="on_radiobutton_proj_clicked" swapped="no"/>
+                      </object>
+                      <packing>
+                        <property name="x">735</property>
+                        <property name="y">5</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkRadioButton" id="radiobutton_date">
+                        <property name="label" translatable="yes">Дата</property>
+                        <property name="width_request">90</property>
+                        <property name="height_request">25</property>
+                        <property name="visible">True</property>
+                        <property name="can_focus">True</property>
+                        <property name="receives_default">False</property>
+                        <property name="active">True</property>
+                        <property name="draw_indicator">True</property>
+                        <property name="group">radiobutton_ust</property>
+                        <signal name="clicked" handler="on_radiobutton_date_clicked" swapped="no"/>
+                      </object>
+                      <packing>
+                        <property name="x">869</property>
+                        <property name="y">5</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkRadioButton" id="radiobutton_prim">
+                        <property name="label" translatable="yes">Примечания</property>
+                        <property name="width_request">100</property>
+                        <property name="height_request">25</property>
+                        <property name="visible">True</property>
+                        <property name="can_focus">True</property>
+                        <property name="receives_default">False</property>
+                        <property name="active">True</property>
+                        <property name="draw_indicator">True</property>
+                        <property name="group">radiobutton_ust</property>
+                        <signal name="clicked" handler="on_radiobutton_prim_clicked" swapped="no"/>
+                      </object>
+                      <packing>
+                        <property name="x">932</property>
+                        <property name="y">5</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkEntry" id="entry_Find">
+                        <property name="width_request">100</property>
+                        <property name="height_request">25</property>
+                        <property name="visible">True</property>
+                        <property name="can_focus">True</property>
+                        <property name="invisible_char">●</property>
+                        <property name="width_chars">10</property>
+                        <property name="primary_icon_activatable">False</property>
+                        <property name="secondary_icon_activatable">False</property>
+                        <property name="primary_icon_sensitive">True</property>
+                        <property name="secondary_icon_sensitive">True</property>
+                      </object>
+                      <packing>
+                        <property name="y">5</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkRadioButton" id="radiobutton_ust">
+                        <property name="label" translatable="yes">Установка</property>
+                        <property name="width_request">90</property>
+                        <property name="height_request">25</property>
+                        <property name="visible">True</property>
+                        <property name="can_focus">True</property>
+                        <property name="receives_default">False</property>
+                        <property name="active">True</property>
+                        <property name="draw_indicator">True</property>
+                        <signal name="clicked" handler="on_radiobutton1_clicked" swapped="no"/>
+                      </object>
+                      <packing>
+                        <property name="x">110</property>
+                        <property name="y">5</property>
+                      </packing>
+                    </child>
+                  </object>
+                  <packing>
+                    <property name="expand">True</property>
+                    <property name="fill">True</property>
+                    <property name="position">0</property>
+                  </packing>
+                </child>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">False</property>
+                <property name="position">0</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkHBox" id="hbox10">
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <child>
+                  <object class="GtkButton" id="button34">
+                    <property name="label" translatable="yes">Найти</property>
+                    <property name="visible">True</property>
+                    <property name="can_focus">True</property>
+                    <property name="receives_default">True</property>
+                    <signal name="clicked" handler="on_button34_clicked" swapped="no"/>
+                  </object>
+                  <packing>
+                    <property name="expand">True</property>
+                    <property name="fill">True</property>
+                    <property name="position">0</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkButton" id="button36">
+                    <property name="label" translatable="yes">Открыть</property>
+                    <property name="visible">True</property>
+                    <property name="can_focus">True</property>
+                    <property name="receives_default">True</property>
+                    <signal name="clicked" handler="on_button36_clicked" swapped="no"/>
+                  </object>
+                  <packing>
+                    <property name="expand">True</property>
+                    <property name="fill">True</property>
+                    <property name="position">1</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkButton" id="button35">
+                    <property name="label" translatable="yes">Закрыть</property>
+                    <property name="visible">True</property>
+                    <property name="can_focus">True</property>
+                    <property name="receives_default">True</property>
+                    <signal name="clicked" handler="on_button35_clicked" swapped="no"/>
+                  </object>
+                  <packing>
+                    <property name="expand">True</property>
+                    <property name="fill">True</property>
+                    <property name="position">2</property>
+                  </packing>
+                </child>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">1</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="position">2</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+  <object class="GtkListStore" id="liststore_Sotr">
+    <columns>
+      <!-- column-name IDsotr -->
+      <column type="gint"/>
+      <!-- column-name FamSotr -->
+      <column type="gchararray"/>
+      <!-- column-name NamSotr -->
+      <column type="gchararray"/>
+      <!-- column-name Doljn -->
+      <column type="gchararray"/>
+      <!-- column-name Sotrudnichestvo -->
+      <column type="gint"/>
+    </columns>
+  </object>
+  <object class="GtkWindow" id="wSotr">
+    <property name="can_focus">False</property>
+    <child>
+      <object class="GtkVBox" id="vbox2">
+        <property name="visible">True</property>
+        <property name="can_focus">False</property>
+        <child>
+          <object class="GtkLabel" id="labelSotr">
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="label" translatable="yes">Сотрудники</property>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="position">0</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkScrolledWindow" id="swSotr">
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="hscrollbar_policy">automatic</property>
+            <property name="vscrollbar_policy">automatic</property>
+            <child>
+              <object class="GtkTreeView" id="treeview_Sotr">
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="model">liststore_Sotr</property>
+                <child>
+                  <object class="GtkTreeViewColumn" id="treeviewcolumn_IDsotr">
+                    <property name="visible">False</property>
+                    <property name="title" translatable="yes">Код сотрудника</property>
+                    <child>
+                      <object class="GtkCellRendererText" id="cellrenderertext1"/>
+                      <attributes>
+                        <attribute name="text">0</attribute>
+                      </attributes>
+                    </child>
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkTreeViewColumn" id="treeviewcolumn_FamSotr">
+                    <property name="title" translatable="yes">Фамилия</property>
+                    <child>
+                      <object class="GtkCellRendererText" id="cellrenderertext2"/>
+                      <attributes>
+                        <attribute name="text">1</attribute>
+                      </attributes>
+                    </child>
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkTreeViewColumn" id="treeviewcolumn_NamSotr">
+                    <property name="visible">False</property>
+                    <property name="title" translatable="yes">Имя</property>
+                    <child>
+                      <object class="GtkCellRendererText" id="cellrenderertext3"/>
+                      <attributes>
+                        <attribute name="text">2</attribute>
+                      </attributes>
+                    </child>
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkTreeViewColumn" id="treeviewcolumn_DoljnSotr">
+                    <property name="title" translatable="yes">Должность</property>
+                    <child>
+                      <object class="GtkCellRendererText" id="cellrenderertext4"/>
+                      <attributes>
+                        <attribute name="text">3</attribute>
+                      </attributes>
+                    </child>
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkTreeViewColumn" id="treeviewcolumn_Sotrudnichestvo">
+                    <property name="visible">False</property>
+                    <property name="title" translatable="yes">Сотрудничество</property>
+                    <child>
+                      <object class="GtkCellRendererText" id="cellrenderertext5"/>
+                      <attributes>
+                        <attribute name="text">4</attribute>
+                      </attributes>
+                    </child>
+                  </object>
+                </child>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="expand">True</property>
+            <property name="fill">True</property>
+            <property name="position">1</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkHBox" id="hbox1">
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <child>
+              <object class="GtkButton" id="button4">
+                <property name="label" translatable="yes">Открыть</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="receives_default">True</property>
+                <signal name="clicked" handler="on_button4_clicked" swapped="no"/>
+              </object>
+              <packing>
+                <property name="expand">True</property>
+                <property name="fill">True</property>
+                <property name="position">0</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="button5">
+                <property name="label" translatable="yes">Добавить</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="receives_default">True</property>
+                <signal name="clicked" handler="on_button5_clicked" swapped="no"/>
+              </object>
+              <packing>
+                <property name="expand">True</property>
+                <property name="fill">True</property>
+                <property name="position">1</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="button8">
+                <property name="label" translatable="yes">Удалить</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="receives_default">True</property>
+                <signal name="clicked" handler="on_button8_clicked" swapped="no"/>
+              </object>
+              <packing>
+                <property name="expand">True</property>
+                <property name="fill">True</property>
+                <property name="position">2</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkToggleButton" id="togglebutton1">
+                <property name="label" translatable="yes">Скрыть</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="receives_default">True</property>
+                <signal name="toggled" handler="on_togglebutton1_toggled" swapped="no"/>
+              </object>
+              <packing>
+                <property name="expand">True</property>
+                <property name="fill">True</property>
+                <property name="position">3</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="button6">
+                <property name="label" translatable="yes">Закрыть</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="receives_default">True</property>
+                <signal name="clicked" handler="on_button6_clicked" swapped="no"/>
+              </object>
+              <packing>
+                <property name="expand">True</property>
+                <property name="fill">True</property>
+                <property name="position">4</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="position">2</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+  <object class="GtkListStore" id="liststore_cable">
+    <columns>
+      <!-- column-name КодУстКаб -->
+      <column type="gint"/>
+      <!-- column-name Марка -->
+      <column type="gchararray"/>
+      <!-- column-name Длина -->
+      <column type="gint"/>
+      <!-- column-name Установка -->
+      <column type="gchararray"/>
+      <!-- column-name КодРегНом -->
+      <column type="gint"/>
+    </columns>
+  </object>
+  <object class="GtkWindow" id="wChange">
+    <property name="can_focus">False</property>
+    <signal name="destroy" handler="on_wChange_destroy" swapped="no"/>
+    <signal name="show" handler="on_wChange_show" swapped="no"/>
+    <child>
+      <object class="GtkVBox" id="vbox10">
+        <property name="visible">True</property>
+        <property name="can_focus">False</property>
+        <child>
+          <object class="GtkLabel" id="label21">
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="label" translatable="yes">Данные проекта</property>
+            <attributes>
+              <attribute name="weight" value="bold"/>
+              <attribute name="size" value="15"/>
+            </attributes>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="position">0</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkFixed" id="fixed5">
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <child>
+              <object class="GtkLabel" id="label22">
+                <property name="width_request">80</property>
+                <property name="height_request">25</property>
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="xalign">0</property>
+                <property name="label" translatable="yes">Тип системы</property>
+                <attributes>
+                  <attribute name="weight" value="bold"/>
+                </attributes>
+              </object>
+              <packing>
+                <property name="x">730</property>
+                <property name="y">29</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkLabel" id="label23">
+                <property name="width_request">210</property>
+                <property name="height_request">25</property>
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="xalign">0</property>
+                <property name="label" translatable="yes">Расположение (область город  и.т.д)</property>
+                <attributes>
+                  <attribute name="weight" value="bold"/>
+                </attributes>
+              </object>
+              <packing>
+                <property name="x">205</property>
+                <property name="y">80</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkLabel" id="label24">
+                <property name="width_request">200</property>
+                <property name="height_request">25</property>
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="xalign">0</property>
+                <property name="label" translatable="yes">Название объекта (завод, дом и.т.д)</property>
+                <attributes>
+                  <attribute name="weight" value="bold"/>
+                  <attribute name="gravity" value="west"/>
+                </attributes>
+              </object>
+              <packing>
+                <property name="x">205</property>
+                <property name="y">29</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkLabel" id="label25">
+                <property name="width_request">120</property>
+                <property name="height_request">25</property>
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="xalign">0</property>
+                <property name="label" translatable="yes">Заказчик</property>
+                <attributes>
+                  <attribute name="weight" value="bold"/>
+                </attributes>
+              </object>
+              <packing>
+                <property name="x">205</property>
+                <property name="y">131</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkLabel" id="label27">
+                <property name="width_request">80</property>
+                <property name="height_request">25</property>
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="xalign">0</property>
+                <property name="label" translatable="yes">Менеджер</property>
+                <attributes>
+                  <attribute name="weight" value="bold"/>
+                </attributes>
+              </object>
+              <packing>
+                <property name="x">205</property>
+                <property name="y">182</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkLabel" id="label26">
+                <property name="width_request">100</property>
+                <property name="height_request">25</property>
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="xalign">0</property>
+                <property name="label" translatable="yes">Проектировщик</property>
+                <attributes>
+                  <attribute name="weight" value="bold"/>
+                </attributes>
+              </object>
+              <packing>
+                <property name="x">205</property>
+                <property name="y">233</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkLabel" id="label28">
+                <property name="width_request">40</property>
+                <property name="height_request">25</property>
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="xalign">0</property>
+                <property name="label" translatable="yes">Дата</property>
+                <attributes>
+                  <attribute name="weight" value="bold"/>
+                </attributes>
+              </object>
+              <packing>
+                <property name="x">730</property>
+                <property name="y">252</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkEntry" id="gObjsituate">
+                <property name="width_request">160</property>
+                <property name="height_request">25</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="max_length">192</property>
+                <property name="invisible_char">●</property>
+                <property name="invisible_char_set">True</property>
+                <property name="primary_icon_activatable">False</property>
+                <property name="secondary_icon_activatable">False</property>
+                <property name="primary_icon_sensitive">True</property>
+                <property name="secondary_icon_sensitive">True</property>
+              </object>
+              <packing>
+                <property name="x">19</property>
+                <property name="y">80</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkEntry" id="gZakazpname">
+                <property name="width_request">160</property>
+                <property name="height_request">25</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="max_length">71</property>
+                <property name="invisible_char">●</property>
+                <property name="invisible_char_set">True</property>
+                <property name="primary_icon_activatable">False</property>
+                <property name="secondary_icon_activatable">False</property>
+                <property name="primary_icon_sensitive">True</property>
+                <property name="secondary_icon_sensitive">True</property>
+              </object>
+              <packing>
+                <property name="x">19</property>
+                <property name="y">131</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkEntry" id="gObjname">
+                <property name="width_request">160</property>
+                <property name="height_request">25</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="max_length">192</property>
+                <property name="invisible_char">●</property>
+                <property name="invisible_char_set">True</property>
+                <property name="primary_icon_activatable">False</property>
+                <property name="secondary_icon_activatable">False</property>
+                <property name="primary_icon_sensitive">True</property>
+                <property name="secondary_icon_sensitive">True</property>
+              </object>
+              <packing>
+                <property name="x">19</property>
+                <property name="y">29</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkCalendar" id="calendar1">
+                <property name="width_request">160</property>
+                <property name="height_request">169</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="year">2019</property>
+                <property name="month">3</property>
+                <property name="day">20</property>
+              </object>
+              <packing>
+                <property name="x">544</property>
+                <property name="y">182</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkLabel" id="label30">
+                <property name="width_request">172</property>
+                <property name="height_request">25</property>
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="xalign">0</property>
+                <property name="label" translatable="yes">Порядковый номер системы</property>
+                <attributes>
+                  <attribute name="weight" value="bold"/>
+                </attributes>
+              </object>
+              <packing>
+                <property name="x">730</property>
+                <property name="y">80</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkLabel" id="label31">
+                <property name="width_request">180</property>
+                <property name="height_request">25</property>
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="xalign">0</property>
+                <property name="yalign">0.55000001192092896</property>
+                <property name="label" translatable="yes">Порядковый номер в проекте</property>
+                <attributes>
+                  <attribute name="weight" value="bold"/>
+                </attributes>
+              </object>
+              <packing>
+                <property name="x">730</property>
+                <property name="y">131</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkSpinButton" id="spinbutton_PorNom">
+                <property name="width_request">160</property>
+                <property name="height_request">25</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="invisible_char">●</property>
+                <property name="primary_icon_activatable">False</property>
+                <property name="secondary_icon_activatable">False</property>
+                <property name="primary_icon_sensitive">True</property>
+                <property name="secondary_icon_sensitive">True</property>
+                <property name="adjustment">adjustment_PorNom</property>
+              </object>
+              <packing>
+                <property name="x">544</property>
+                <property name="y">80</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkSpinButton" id="spinbutton_PorNomProj">
+                <property name="width_request">160</property>
+                <property name="height_request">25</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="max_length">2</property>
+                <property name="invisible_char">●</property>
+                <property name="primary_icon_activatable">False</property>
+                <property name="secondary_icon_activatable">False</property>
+                <property name="primary_icon_sensitive">True</property>
+                <property name="secondary_icon_sensitive">True</property>
+                <property name="adjustment">adjustment_PorNomProj</property>
+                <property name="numeric">True</property>
+              </object>
+              <packing>
+                <property name="x">544</property>
+                <property name="y">131</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkComboBoxText" id="comboboxtext1">
+                <property name="width_request">160</property>
+                <property name="height_request">25</property>
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+              </object>
+              <packing>
+                <property name="x">544</property>
+                <property name="y">29</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkComboBoxText" id="comboboxtext2">
+                <property name="width_request">160</property>
+                <property name="height_request">25</property>
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+              </object>
+              <packing>
+                <property name="x">19</property>
+                <property name="y">182</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkComboBoxText" id="comboboxtext3">
+                <property name="width_request">160</property>
+                <property name="height_request">25</property>
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+              </object>
+              <packing>
+                <property name="x">19</property>
+                <property name="y">233</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkEntry" id="gPrim">
+                <property name="width_request">160</property>
+                <property name="height_request">25</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="max_length">192</property>
+                <property name="invisible_char">●</property>
+                <property name="primary_icon_activatable">False</property>
+                <property name="secondary_icon_activatable">False</property>
+                <property name="primary_icon_sensitive">True</property>
+                <property name="secondary_icon_sensitive">True</property>
+              </object>
+              <packing>
+                <property name="x">19</property>
+                <property name="y">284</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkLabel" id="label37">
+                <property name="width_request">80</property>
+                <property name="height_request">25</property>
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="xalign">0</property>
+                <property name="label" translatable="yes">Примечания</property>
+                <attributes>
+                  <attribute name="weight" value="bold"/>
+                </attributes>
+              </object>
+              <packing>
+                <property name="x">205</property>
+                <property name="y">284</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="expand">True</property>
+            <property name="fill">True</property>
+            <property name="position">1</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="label32">
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="label" translatable="yes">Количество и марка греющего кабеля</property>
+            <attributes>
+              <attribute name="weight" value="bold"/>
+              <attribute name="size" value="15"/>
+            </attributes>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="position">2</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkScrolledWindow" id="scrolledwindow6">
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="hscrollbar_policy">automatic</property>
+            <property name="vscrollbar_policy">automatic</property>
+            <child>
+              <object class="GtkTreeView" id="treeview_change">
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="model">liststore_cable</property>
+                <child>
+                  <object class="GtkTreeViewColumn" id="treeviewcolumn24">
+                    <property name="visible">False</property>
+                    <property name="title" translatable="yes">Код 
+установленного 
+кабеля
+</property>
+                    <child>
+                      <object class="GtkCellRendererText" id="cellrenderertext27"/>
+                      <attributes>
+                        <attribute name="text">0</attribute>
+                      </attributes>
+                    </child>
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkTreeViewColumn" id="treeviewcolumn19">
+                    <property name="title" translatable="yes">Марка</property>
+                    <property name="alignment">0.5</property>
+                    <child>
+                      <object class="GtkCellRendererText" id="cellrenderertext19"/>
+                      <attributes>
+                        <attribute name="text">1</attribute>
+                      </attributes>
+                    </child>
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkTreeViewColumn" id="treeviewcolumn22">
+                    <property name="title" translatable="yes">Длина</property>
+                    <property name="alignment">0.5</property>
+                    <child>
+                      <object class="GtkCellRendererText" id="cellrenderertext20"/>
+                      <attributes>
+                        <attribute name="text">2</attribute>
+                      </attributes>
+                    </child>
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkTreeViewColumn" id="treeviewcolumn23">
+                    <property name="title" translatable="yes">Обогреваемый объект</property>
+                    <child>
+                      <object class="GtkCellRendererText" id="cellrenderertext21"/>
+                      <attributes>
+                        <attribute name="text">3</attribute>
+                      </attributes>
+                    </child>
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkTreeViewColumn" id="treeviewcolumn30">
+                    <property name="visible">False</property>
+                    <property name="title" translatable="yes">Код регистрационного номера</property>
+                    <child>
+                      <object class="GtkCellRendererText" id="cellrenderertext28"/>
+                      <attributes>
+                        <attribute name="text">4</attribute>
+                      </attributes>
+                    </child>
+                  </object>
+                </child>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="expand">True</property>
+            <property name="fill">True</property>
+            <property name="position">3</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="button38">
+            <property name="label" translatable="yes">Печать</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <signal name="clicked" handler="on_button38_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="position">4</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkHBox" id="hbox7">
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <child>
+              <object class="GtkButton" id="button32">
+                <property name="label" translatable="yes">Открыть</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="receives_default">True</property>
+                <signal name="clicked" handler="on_button32_clicked" swapped="no"/>
+              </object>
+              <packing>
+                <property name="expand">True</property>
+                <property name="fill">True</property>
+                <property name="position">0</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="button33">
+                <property name="label" translatable="yes">Добавить</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="receives_default">True</property>
+                <signal name="clicked" handler="on_button33_clicked" swapped="no"/>
+              </object>
+              <packing>
+                <property name="expand">True</property>
+                <property name="fill">True</property>
+                <property name="position">1</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="button31">
+                <property name="label" translatable="yes">Удалить</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="receives_default">True</property>
+                <signal name="clicked" handler="on_button31_clicked" swapped="no"/>
+              </object>
+              <packing>
+                <property name="expand">True</property>
+                <property name="fill">True</property>
+                <property name="position">2</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="button29">
+                <property name="label" translatable="yes">Закрыть</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="receives_default">True</property>
+                <signal name="clicked" handler="on_button29_clicked" swapped="no"/>
+              </object>
+              <packing>
+                <property name="expand">True</property>
+                <property name="fill">True</property>
+                <property name="position">3</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="position">5</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+  <object class="GtkListStore" id="liststore_prih_stroki">
+    <columns>
+      <!-- column-name gint1 -->
+      <column type="gint"/>
+      <!-- column-name gchararray1 -->
+      <column type="gchararray"/>
+      <!-- column-name gint2 -->
+      <column type="gint"/>
+      <!-- column-name gint3 -->
+      <column type="gint"/>
+      <!-- column-name gint4 -->
+      <column type="gint"/>
+      <!-- column-name gchararray2 -->
+      <column type="gchararray"/>
+    </columns>
+  </object>
+  <object class="GtkListStore" id="liststore_projects">
+    <columns>
+      <!-- column-name Код -->
+      <column type="gint"/>
+      <!-- column-name Регистрационный -->
+      <column type="gchararray"/>
+      <!-- column-name Объект -->
+      <column type="gchararray"/>
+      <!-- column-name Расположение -->
+      <column type="gchararray"/>
+      <!-- column-name Заказчик -->
+      <column type="gchararray"/>
+      <!-- column-name Менеджер -->
+      <column type="gchararray"/>
+      <!-- column-name Проектировщик -->
+      <column type="gchararray"/>
+      <!-- column-name Дата -->
+      <column type="gchararray"/>
+      <!-- column-name Примечания -->
+      <column type="gchararray"/>
+      <!-- column-name < -->
+      <column type="&lt; определите новый столбец &gt;"/>
+    </columns>
+  </object>
+  <object class="GtkWindow" id="wProjects">
+    <property name="can_focus">False</property>
+    <signal name="destroy" handler="on_wProjects_destroy" swapped="no"/>
+    <signal name="show" handler="on_wProjects_show" swapped="no"/>
+    <signal name="button-press-event" handler="on_wProjects_button_press_event" swapped="no"/>
+    <child>
+      <object class="GtkVBox" id="vbox9">
+        <property name="visible">True</property>
+        <property name="can_focus">False</property>
+        <child>
+          <object class="GtkLabel" id="label20">
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="label" translatable="yes">Проекты</property>
+            <property name="ellipsize">start</property>
+            <attributes>
+              <attribute name="weight" value="bold"/>
+              <attribute name="size" value="15"/>
+            </attributes>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="position">0</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkScrolledWindow" id="scrolledwindow5">
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="has_tooltip">True</property>
+            <property name="hscrollbar_policy">automatic</property>
+            <property name="vscrollbar_policy">automatic</property>
+            <signal name="button-press-event" handler="on_scrolledwindow5_button_press_event" swapped="no"/>
+            <child>
+              <object class="GtkTreeView" id="treeview_projects">
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="model">liststore_projects</property>
+                <property name="search_column">0</property>
+                <property name="level_indentation">3</property>
+                <signal name="add" handler="on_treeview_projects_add" swapped="no"/>
+                <signal name="row-activated" handler="on_treeview_projects_row_activated" swapped="no"/>
+                <child>
+                  <object class="GtkTreeViewColumn" id="treeviewcolumn18">
+                    <property name="visible">False</property>
+                    <property name="title" translatable="yes">Код регистрационного номера</property>
+                    <child>
+                      <object class="GtkCellRendererText" id="cellrenderertext1_KodRegNom"/>
+                      <attributes>
+                        <attribute name="text">0</attribute>
+                      </attributes>
+                    </child>
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkTreeViewColumn" id="treeviewcolumn20">
+                    <property name="title" translatable="yes">Регистрационный номер</property>
+                    <property name="clickable">True</property>
+                    <property name="alignment">0.5</property>
+                    <signal name="clicked" handler="on_treeviewcolumn20_clicked" swapped="no"/>
+                    <child>
+                      <object class="GtkCellRendererText" id="cellrenderertext17"/>
+                      <attributes>
+                        <attribute name="text">1</attribute>
+                      </attributes>
+                    </child>
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkTreeViewColumn" id="treeviewcolumn21">
+                    <property name="title" translatable="yes">Название объекта</property>
+                    <property name="alignment">0.5</property>
+                    <child>
+                      <object class="GtkCellRendererText" id="cellrenderertext18"/>
+                      <attributes>
+                        <attribute name="text">2</attribute>
+                      </attributes>
+                    </child>
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkTreeViewColumn" id="treeviewcolumn25">
+                    <property name="title" translatable="yes">Географическое положение</property>
+                    <property name="alignment">0.5</property>
+                    <child>
+                      <object class="GtkCellRendererText" id="cellrenderertext22"/>
+                      <attributes>
+                        <attribute name="text">3</attribute>
+                      </attributes>
+                    </child>
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkTreeViewColumn" id="treeviewcolumn26">
+                    <property name="sizing">autosize</property>
+                    <property name="title" translatable="yes">Заказчик</property>
+                    <property name="alignment">0.5</property>
+                    <child>
+                      <object class="GtkCellRendererText" id="cellrenderertext23"/>
+                      <attributes>
+                        <attribute name="width">4</attribute>
+                        <attribute name="text">4</attribute>
+                      </attributes>
+                    </child>
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkTreeViewColumn" id="treeviewcolumn27">
+                    <property name="title" translatable="yes">Менеджер</property>
+                    <property name="alignment">0.5</property>
+                    <child>
+                      <object class="GtkCellRendererText" id="cellrenderertext24"/>
+                      <attributes>
+                        <attribute name="text">5</attribute>
+                      </attributes>
+                    </child>
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkTreeViewColumn" id="treeviewcolumn28">
+                    <property name="title" translatable="yes">Проектировщик</property>
+                    <property name="alignment">0.5</property>
+                    <child>
+                      <object class="GtkCellRendererText" id="cellrenderertext25"/>
+                      <attributes>
+                        <attribute name="text">6</attribute>
+                      </attributes>
+                    </child>
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkTreeViewColumn" id="treeviewcolumn29">
+                    <property name="title" translatable="yes">Дата</property>
+                    <property name="alignment">0.5</property>
+                    <child>
+                      <object class="GtkCellRendererText" id="cellrenderertext26"/>
+                      <attributes>
+                        <attribute name="text">7</attribute>
+                      </attributes>
+                    </child>
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkTreeViewColumn" id="treeviewcolumn_prim">
+                    <property name="title" translatable="yes">Примечания</property>
+                    <property name="alignment">0.5</property>
+                    <child>
+                      <object class="GtkCellRendererText" id="cellrenderertext_prim"/>
+                      <attributes>
+                        <attribute name="text">8</attribute>
+                      </attributes>
+                    </child>
+                  </object>
+                </child>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="expand">True</property>
+            <property name="fill">True</property>
+            <property name="position">1</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkHBox" id="hbox6">
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <child>
+              <object class="GtkButton" id="button1">
+                <property name="label" translatable="yes">Открыть</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="receives_default">True</property>
+                <signal name="clicked" handler="on_button1_clicked" swapped="no"/>
+              </object>
+              <packing>
+                <property name="expand">True</property>
+                <property name="fill">True</property>
+                <property name="position">0</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="button2">
+                <property name="label" translatable="yes">Добавить</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="receives_default">True</property>
+                <signal name="clicked" handler="on_button2_clicked" swapped="no"/>
+              </object>
+              <packing>
+                <property name="expand">True</property>
+                <property name="fill">True</property>
+                <property name="position">1</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="button27">
+                <property name="label" translatable="yes">Удалить</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="receives_default">True</property>
+                <signal name="clicked" handler="on_button27_clicked" swapped="no"/>
+              </object>
+              <packing>
+                <property name="expand">True</property>
+                <property name="fill">True</property>
+                <property name="position">2</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="button28">
+                <property name="label" translatable="yes">Закрыть</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="receives_default">True</property>
+                <signal name="clicked" handler="on_button28_clicked" swapped="no"/>
+              </object>
+              <packing>
+                <property name="expand">True</property>
+                <property name="fill">True</property>
+                <property name="position">3</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">False</property>
+            <property name="position">2</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+  <object class="GtkWindow" id="wChangeSotr">
+    <property name="height_request">0</property>
+    <property name="can_focus">False</property>
+    <child>
+      <object class="GtkVBox" id="vbox3">
+        <property name="visible">True</property>
+        <property name="can_focus">False</property>
+        <child>
+          <object class="GtkLabel" id="label1">
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="label" translatable="yes">Данные сотрудника</property>
+            <attributes>
+              <attribute name="weight" value="bold"/>
+              <attribute name="size" value="15"/>
+            </attributes>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="position">0</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkFixed" id="fixed1">
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <child>
+              <object class="GtkEntry" id="gFamSotr">
+                <property name="width_request">160</property>
+                <property name="height_request">25</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="invisible_char">●</property>
+                <property name="primary_icon_activatable">False</property>
+                <property name="secondary_icon_activatable">False</property>
+                <property name="primary_icon_sensitive">True</property>
+                <property name="secondary_icon_sensitive">True</property>
+              </object>
+              <packing>
+                <property name="x">57</property>
+                <property name="y">38</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkComboBoxText" id="gDoljnSotr">
+                <property name="width_request">160</property>
+                <property name="height_request">25</property>
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+              </object>
+              <packing>
+                <property name="x">463</property>
+                <property name="y">38</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkComboBoxText" id="gStatusSotr">
+                <property name="width_request">160</property>
+                <property name="height_request">25</property>
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+              </object>
+              <packing>
+                <property name="x">666</property>
+                <property name="y">38</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkEntry" id="gNameSotr">
+                <property name="width_request">160</property>
+                <property name="height_request">25</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="invisible_char">●</property>
+                <property name="primary_icon_activatable">False</property>
+                <property name="secondary_icon_activatable">False</property>
+                <property name="primary_icon_sensitive">True</property>
+                <property name="secondary_icon_sensitive">True</property>
+              </object>
+              <packing>
+                <property name="x">260</property>
+                <property name="y">38</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkLabel" id="Familia">
+                <property name="width_request">160</property>
+                <property name="height_request">25</property>
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="label" translatable="yes">Фамилия</property>
+                <attributes>
+                  <attribute name="weight" value="bold"/>
+                </attributes>
+              </object>
+              <packing>
+                <property name="x">57</property>
+                <property name="y">10</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkLabel" id="Name">
+                <property name="width_request">160</property>
+                <property name="height_request">25</property>
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="label" translatable="yes">Имя</property>
+                <attributes>
+                  <attribute name="weight" value="bold"/>
+                </attributes>
+              </object>
+              <packing>
+                <property name="x">260</property>
+                <property name="y">10</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkLabel" id="Doljnost">
+                <property name="width_request">160</property>
+                <property name="height_request">25</property>
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="label" translatable="yes">Должность</property>
+                <attributes>
+                  <attribute name="weight" value="bold"/>
+                </attributes>
+              </object>
+              <packing>
+                <property name="x">463</property>
+                <property name="y">10</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkLabel" id="Status">
+                <property name="width_request">160</property>
+                <property name="height_request">25</property>
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="label" translatable="yes">Сотрудничество</property>
+                <attributes>
+                  <attribute name="weight" value="bold"/>
+                </attributes>
+              </object>
+              <packing>
+                <property name="x">666</property>
+                <property name="y">10</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="expand">True</property>
+            <property name="fill">True</property>
+            <property name="position">1</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkHBox" id="hbox2">
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <child>
+              <object class="GtkButton" id="button9">
+                <property name="label" translatable="yes">Закрыть</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="receives_default">True</property>
+                <signal name="clicked" handler="on_button9_clicked" swapped="no"/>
+              </object>
+              <packing>
+                <property name="expand">True</property>
+                <property name="fill">True</property>
+                <property name="position">0</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="position">2</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+  <object class="GtkWindow" id="wMain">
+    <property name="can_focus">False</property>
+    <child>
+      <object class="GtkVBox" id="vbox1">
+        <property name="visible">True</property>
+        <property name="can_focus">False</property>
+        <child>
+          <object class="GtkButton" id="button16">
+            <property name="label" translatable="yes">Проекты</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <signal name="clicked" handler="on_button16_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="expand">True</property>
+            <property name="fill">True</property>
+            <property name="position">0</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="button23">
+            <property name="label" translatable="yes">Настройки</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <signal name="clicked" handler="on_button23_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="expand">True</property>
+            <property name="fill">True</property>
+            <property name="position">1</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="button7">
+            <property name="label" translatable="yes">Сотрудники</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <signal name="clicked" handler="on_button7_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="expand">True</property>
+            <property name="fill">True</property>
+            <property name="position">2</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="button10">
+            <property name="label" translatable="yes">Поиск</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <signal name="clicked" handler="on_button10_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="expand">True</property>
+            <property name="fill">True</property>
+            <property name="position">3</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="button3">
+            <property name="label" translatable="yes">Выход</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <signal name="clicked" handler="gtk_main_quit" swapped="no"/>
+          </object>
+          <packing>
+            <property name="expand">True</property>
+            <property name="fill">True</property>
+            <property name="position">4</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+  <object class="GtkWindow" id="wPassword">
+    <property name="can_focus">False</property>
+    <signal name="destroy" handler="on_wPassword_destroy" swapped="no"/>
+    <signal name="destroy-event" handler="on_wPassword_destroy_event" swapped="no"/>
+    <child>
+      <object class="GtkVBox" id="vbox4">
+        <property name="visible">True</property>
+        <property name="can_focus">False</property>
+        <child>
+          <object class="GtkLabel" id="label2">
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="label" translatable="yes">Данные для входа</property>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="position">0</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkFixed" id="fixed3">
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <child>
+              <object class="GtkEntry" id="entry_Login">
+                <property name="width_request">170</property>
+                <property name="height_request">30</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="invisible_char">●</property>
+                <property name="primary_icon_activatable">False</property>
+                <property name="secondary_icon_activatable">False</property>
+                <property name="primary_icon_sensitive">True</property>
+                <property name="secondary_icon_sensitive">True</property>
+              </object>
+              <packing>
+                <property name="x">136</property>
+                <property name="y">89</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkEntry" id="entry_Password">
+                <property name="width_request">170</property>
+                <property name="height_request">30</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="invisible_char">●</property>
+                <property name="primary_icon_activatable">False</property>
+                <property name="secondary_icon_activatable">False</property>
+                <property name="primary_icon_sensitive">True</property>
+                <property name="secondary_icon_sensitive">True</property>
+              </object>
+              <packing>
+                <property name="x">136</property>
+                <property name="y">170</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkLabel" id="label3">
+                <property name="width_request">170</property>
+                <property name="height_request">30</property>
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="label" translatable="yes">Логин</property>
+              </object>
+              <packing>
+                <property name="x">136</property>
+                <property name="y">59</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkLabel" id="label4">
+                <property name="width_request">170</property>
+                <property name="height_request">30</property>
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="label" translatable="yes">Пароль</property>
+              </object>
+              <packing>
+                <property name="x">136</property>
+                <property name="y">141</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="expand">True</property>
+            <property name="fill">True</property>
+            <property name="position">1</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="button11">
+            <property name="label" translatable="yes">OK</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <signal name="clicked" handler="on_button11_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="position">2</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+  <object class="GtkWindow" id="wSettings">
+    <property name="can_focus">False</property>
+    <child>
+      <object class="GtkVBox" id="vbox8">
+        <property name="visible">True</property>
+        <property name="can_focus">False</property>
+        <child>
+          <object class="GtkLabel" id="label16">
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="label" translatable="yes">Настройки</property>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">False</property>
+            <property name="position">0</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkFixed" id="fixed4">
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <child>
+              <object class="GtkLabel" id="label17">
+                <property name="width_request">100</property>
+                <property name="height_request">30</property>
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="label" translatable="yes">Название</property>
+              </object>
+              <packing>
+                <property name="x">30</property>
+                <property name="y">50</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkEntry" id="gCompany">
+                <property name="width_request">300</property>
+                <property name="height_request">30</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="invisible_char">●</property>
+                <property name="primary_icon_activatable">False</property>
+                <property name="secondary_icon_activatable">False</property>
+                <property name="primary_icon_sensitive">True</property>
+                <property name="secondary_icon_sensitive">True</property>
+              </object>
+              <packing>
+                <property name="x">140</property>
+                <property name="y">50</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkLabel" id="label18">
+                <property name="width_request">100</property>
+                <property name="height_request">30</property>
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="label" translatable="yes">Телефон</property>
+              </object>
+              <packing>
+                <property name="x">30</property>
+                <property name="y">100</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkEntry" id="gTelefon">
+                <property name="width_request">300</property>
+                <property name="height_request">30</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="invisible_char">●</property>
+                <property name="primary_icon_activatable">False</property>
+                <property name="secondary_icon_activatable">False</property>
+                <property name="primary_icon_sensitive">True</property>
+                <property name="secondary_icon_sensitive">True</property>
+              </object>
+              <packing>
+                <property name="x">140</property>
+                <property name="y">100</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkLabel" id="label19">
+                <property name="width_request">100</property>
+                <property name="height_request">30</property>
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="label" translatable="yes">Адрес</property>
+              </object>
+              <packing>
+                <property name="x">30</property>
+                <property name="y">150</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkEntry" id="gAdres">
+                <property name="width_request">300</property>
+                <property name="height_request">30</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="invisible_char">●</property>
+                <property name="primary_icon_activatable">False</property>
+                <property name="secondary_icon_activatable">False</property>
+                <property name="primary_icon_sensitive">True</property>
+                <property name="secondary_icon_sensitive">True</property>
+              </object>
+              <packing>
+                <property name="x">140</property>
+                <property name="y">150</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="expand">True</property>
+            <property name="fill">True</property>
+            <property name="position">1</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="button26">
+            <property name="label" translatable="yes">Закрыть</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <signal name="clicked" handler="on_button26_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">False</property>
+            <property name="position">2</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>
