@@ -1,0 +1,12 @@
+||=== Сборка: Debug in Projects_PO (compiler: GNU GCC Compiler) ===|
+C:\Work\SQL\Table of projects\change.c||In function 'SaveChange':|
+C:\Work\SQL\Table of projects\change.c|484|warning: pointer targets in passing argument 2 of 'gtk_calendar_get_date' differ in signedness [-Wpointer-sign]|
+C:\progSQL\CodeBlocks2\Gtk\include\gtk-3.0\gtk\gtkcalendar.h|146|note: expected 'guint * {aka unsigned int *}' but argument is of type 'int *'|
+C:\Work\SQL\Table of projects\change.c|484|warning: pointer targets in passing argument 3 of 'gtk_calendar_get_date' differ in signedness [-Wpointer-sign]|
+C:\progSQL\CodeBlocks2\Gtk\include\gtk-3.0\gtk\gtkcalendar.h|146|note: expected 'guint * {aka unsigned int *}' but argument is of type 'int *'|
+C:\Work\SQL\Table of projects\change.c|484|warning: pointer targets in passing argument 4 of 'gtk_calendar_get_date' differ in signedness [-Wpointer-sign]|
+C:\progSQL\CodeBlocks2\Gtk\include\gtk-3.0\gtk\gtkcalendar.h|146|note: expected 'guint * {aka unsigned int *}' but argument is of type 'int *'|
+C:\Work\SQL\Table of projects\change.c|488|warning: 'year_data' is used uninitialized in this function [-Wuninitialized]|
+C:\Work\SQL\Table of projects\change.c|488|warning: 'month_data' is used uninitialized in this function [-Wuninitialized]|
+C:\Work\SQL\Table of projects\change.c|488|warning: 'day_data' is used uninitialized in this function [-Wuninitialized]|
+||=== Build finished: 0 error(s), 6 warning(s) (0 minute(s), 0 second(s)) ===|

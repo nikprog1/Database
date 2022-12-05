@@ -1,0 +1,61 @@
+# depslib dependency file v1.0
+1564247520 source:c:\work\sql\table of projects\cablechange.c
+	"main.h"
+
+1563637093 c:\work\sql\table of projects\main.h
+	<stdlib.h>
+	<gtk/gtk.h>
+	<sqlite3.h>
+	<string.h>
+	<math.h>
+	"projects.h"
+	"change.h"
+	"cablechange.h"
+	"Sotrudniki.h"
+	"changeSotr.h"
+	"settings.h"
+	"password.h"
+
+1564230719 c:\work\sql\table of projects\projects.h
+
+1556565515 c:\work\sql\table of projects\change.h
+
+1564244360 c:\work\sql\table of projects\cablechange.h
+
+1560974308 c:\work\sql\table of projects\sotrudniki.h
+
+1560974129 c:\work\sql\table of projects\changesotr.h
+
+1537188230 c:\work\sql\table of projects\settings.h
+
+1563638036 c:\work\sql\table of projects\password.h
+
+1560970103 source:c:\work\sql\table of projects\change.c
+	"main.h"
+	<stdbool.h>
+	<locale.h>
+
+1560974560 source:c:\work\sql\table of projects\changesotr.c
+	"main.h"
+
+1563480145 source:c:\work\sql\table of projects\findproject.c
+	"main.h"
+
+1564230201 source:c:\work\sql\table of projects\main.c
+	"main.h"
+
+1565203808 source:c:\work\sql\table of projects\projects.c
+	"main.h"
+	"time.h"
+
+1559763655 source:c:\work\sql\table of projects\resource.rc
+
+1563824424 source:c:\work\sql\table of projects\sotrudniki.c
+	"main.h"
+
+1563821113 source:c:\work\sql\table of projects\password.c
+	"main.h"
+
+1564815720 source:c:\work\sql\table of projects\fff.c
+	"main.h"
+
